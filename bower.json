@@ -1,0 +1,21 @@
+{
+  "name": "School Administration",
+  "authors": [
+    "Juan David Henao"
+  ],
+  "description": "",
+  "main": "app.js",
+  "moduleType": [],
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "0.2.15"
+  },
+  "resolutions": {
+    "angular": "~1.4.8"
+  }
+}

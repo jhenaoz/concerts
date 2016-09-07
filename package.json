@@ -1,0 +1,34 @@
+{
+  "name": "eps-psl",
+  "version": "1.0.0",
+  "description": "Example app using firebase for automation porpouse",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp start",
+    "postinstall": "bower install",
+    "test": ""
+  },
+  "keywords": [
+    "eps",
+    "automation",
+    "e2e",
+    "test"
+  ],
+  "author": "jhenaoz93@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "connect-livereload": "^0.5.4",
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-express": "^0.3.5",
+    "gulp-inject": "^3.0.0",
+    "gulp-open": "^1.0.0",
+    "wiredep": "^3.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.13.3",
+    "firebase": "^3.3.0"
+  }
+}
