@@ -6,6 +6,7 @@ const inject = require('gulp-inject');
 const clean = require('gulp-clean');
 const wiredep = require('wiredep').stream;
 const open = require('gulp-open');
+const eslint = require('gulp-eslint');
 
 //DEFINE GLOBAL PATHS
 const config = {
@@ -62,6 +63,13 @@ gulp.task('server', () => {
 gulp.task('open', () => {
   gulp.src(__filename)
   .pipe(open({uri: 'http://localhost:8080'}));
+});
+
+gulp.task('lint', () => {
+  return gulp.src(['**/*.js','!node_modules/**','!app/lib/**'])
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError());
 });
 
 gulp.task('start', [

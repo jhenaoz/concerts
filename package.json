@@ -1,15 +1,15 @@
 {
-  "name": "eps-psl",
+  "name": "concerts",
   "version": "1.0.0",
   "description": "Example app using firebase for automation porpouse",
   "main": "index.js",
   "scripts": {
     "start": "gulp start",
     "postinstall": "bower install",
-    "test": ""
+    "test": "",
+    "quality-control": "gulp lint"
   },
   "keywords": [
-    "eps",
     "automation",
     "e2e",
     "test"
@@ -19,8 +19,12 @@
   "devDependencies": {
     "bower": "^1.7.9",
     "connect-livereload": "^0.5.4",
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb-base": "^7.0.0",
+    "eslint-plugin-import": "^1.14.0",
     "gulp": "^3.9.0",
     "gulp-clean": "^0.3.1",
+    "gulp-eslint": "^3.0.1",
     "gulp-express": "^0.3.5",
     "gulp-inject": "^3.0.0",
     "gulp-open": "^1.0.0",
