@@ -8,5 +8,10 @@ module.exports = {
   'extends': [
     'eslint:recommended',
     'airbnb-base'
-  ]
+  ],
+  'rules': {
+    'comma-dangle': [
+      'error',
+      'never']
+  }
 };
