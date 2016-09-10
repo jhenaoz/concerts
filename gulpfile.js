@@ -1,4 +1,5 @@
 // IMPORT THE REQUIRED LIBS
+/* eslint-disable import/no-extraneous-dependencies */
 const gulp = require('gulp');
 const path = require('path');
 const server = require('gulp-express');
@@ -7,6 +8,7 @@ const clean = require('gulp-clean');
 const wiredep = require('wiredep').stream;
 const open = require('gulp-open');
 const eslint = require('gulp-eslint');
+/* eslint-enable */
 
 // DEFINE GLOBAL PATHS
 const config = {
@@ -14,18 +16,18 @@ const config = {
   dist: 'dist'
 };
 
-gulp.task('reload', () => {
-  gulp.src('./app/**/*.*')
-    .pipe(connect.reload());
-});
+// gulp.task('reload', () => {
+//   gulp.src('./app/**/*.*')
+//     .pipe(connect.reload());
+// });
 
-gulp.task('clean:temp', option =>
-  gulp.src('.tmp', { read: false })
-    .pipe(clean()));
+// gulp.task('clean:temp', option =>
+//   gulp.src('.tmp', { read: false })
+//     .pipe(clean()));
 
-gulp.task('clean:dist', option =>
-  gulp.src(config.dist, { read: false })
-    .pipe(clean()));
+// gulp.task('clean:dist', option =>
+//   gulp.src(config.dist, { read: false })
+//     .pipe(clean()));
 
 gulp.task('watch', () => {
   gulp.watch(['./app/**/*.html'], server.notify);
