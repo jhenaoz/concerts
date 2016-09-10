@@ -1,6 +1,7 @@
-var firebase = require("firebase");
+const firebase = require('firebase');
 const credentials = require('./credentials.json');
+
 firebase.initializeApp({
   serviceAccount: credentials,
-  databaseURL: "https://schoolmanagement-f7d49.firebaseio.com"
+  databaseURL: 'https://schoolmanagement-f7d49.firebaseio.com'
 });
