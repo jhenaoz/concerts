@@ -1,3 +1,5 @@
+const endpoints = require('./endpoints');
+
 module.exports = (app) => {
-  app.use('/api', require('./endpoints'));
-}
+  app.use('/api', endpoints);
+};

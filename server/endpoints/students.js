@@ -1,6 +1,7 @@
 const express = require('express');
 const firebase = require('firebase');
 
+// eslint-disable-next-line new-cap
 const router = express.Router();
 const database = firebase.database();
 const studentsRef = database.ref('/students');
@@ -26,7 +27,8 @@ router.get('/:id', (request, response) => {
 router.delete('/:id', (request, response) => {
   // TODO: REVISAR, CAN'T SET HEADERS AFTER THEY ARE SEN'T
   const studentRef = database.ref(`/students/${request.params.id}`);
-  const operation = studentRef.remove().then(() => {
+  // const operation = studentRef.remove().then(() => {
+  studentRef.remove().then(() => {
     response.send();
   });
 });

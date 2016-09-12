@@ -21,9 +21,9 @@ const config = {
 //     .pipe(connect.reload());
 // });
 
-// gulp.task('clean:temp', option =>
-//   gulp.src('.tmp', { read: false })
-//     .pipe(clean()));
+gulp.task('clean:temp', () =>
+  gulp.src('.tmp', { read: false })
+    .pipe(clean()));
 
 // gulp.task('clean:dist', option =>
 //   gulp.src(config.dist, { read: false })
