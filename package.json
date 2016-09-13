@@ -9,6 +9,9 @@
     "test": "",
     "quality-control": "gulp lint"
   },
+  "engines": {
+    "node": "6.0.0"
+  },
   "keywords": [
     "automation",
     "e2e",
